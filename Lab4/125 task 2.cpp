@@ -71,7 +71,7 @@ public:
         else balance-=amount;
     }
 
-    void giveinterest(int rate=2.5)
+    void giveinterest(double rate=2.5)
     {
         balance+=balance*(rate/100.0)*0.9;
     }
