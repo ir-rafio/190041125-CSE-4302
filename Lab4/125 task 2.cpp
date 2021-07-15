@@ -73,7 +73,7 @@ public:
 
     void giveinterest(int rate=2.5)
     {
-        balance+=balance*rate/100*0.9;
+        balance+=balance*(rate/100.0)*0.9;
     }
 
     ~BankAccount()
