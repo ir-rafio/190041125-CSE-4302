@@ -195,11 +195,12 @@ public:
     void setInterestRate(const float rate)
     {
         interestRate=rate;
+        setMonthlyDepositAmount();
     }
 
-    void setMonthlyDepositAmount(const float num)
+    void setMonthlyDepositAmount()
     {
-        monthlyDepositAmount=num;
+        monthlyDepositAmount=-getBalance()*interestRate/1200;
     }
 
     void description()
@@ -334,7 +335,6 @@ int main()
     LoanAccount l;
     l.setBalance(-500000);
     l.setInterestRate(10);
-    l.setMonthlyDepositAmount(4166.67);
     l.description();
 
     return 0;
