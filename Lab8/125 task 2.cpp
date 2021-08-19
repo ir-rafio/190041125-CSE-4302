@@ -119,14 +119,14 @@ void N28_Building::showAllLabs() const
 {
     cout << "Showing all Labs:\n";
 
-    for(Lab* p=lnode; p; p=p->next) cout << "Lab " << p->getLabName() << '\t' << p->getCapacity() << " Capacity\n";
+    for(Lab* p=lnode; p; p=p->next) cout << "Lab " << p->getLabName() << ' ' << p->getCapacity() << " Capacity\n";
 }
 
 void N28_Building::showAllLecturerRoom() const
 {
     cout << "Showing all lecturers room:\n";
 
-    for(Lecturer_Room* p=rnode; p; p=p->next) cout << p->getRoomName() << '\t' << p->getRoomNo() << '\t' << p->getCapacity() << " Capacity\n";
+    for(Lecturer_Room* p=rnode; p; p=p->next) cout << p->getRoomName() << '\t' << p->getRoomNo() << ' ' << p->getCapacity() << " Capacity\n";
 }
 
 int main()
